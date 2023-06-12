@@ -5,11 +5,21 @@
     <link rel="stylesheet" type="text/css" href="src/style.css" />
   </head>
   <body>
-    <h1>Guess the Number</h1>
-    <p>Guess a number between 1 and 100:</p>
-    <input type="text" id="guessInput" />
-    <button onclick="checkGuess()">Submit</button>
-    <p id="message"></p>
+    <div class="container">
+      <video
+        src="images/background.mp4"
+        autoplay
+        loop
+        muted
+        play-inline
+        class="back-video"
+      ></video>
+      <h1>Guess the Number</h1>
+      <p>Guess a number between 1 and 100:</p>
+      <input type="text" id="guessInput" />
+      <button onclick="checkGuess()">Submit</button>
+      <p id="message"></p>
+    </div>
 
     <script src="src/app.js"></script>
     <footer>This is open source code done by Loza Daniel :)</footer>

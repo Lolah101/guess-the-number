@@ -1,11 +1,8 @@
 body {
   text-align: center;
   font-family: monospace, sans-serif;
-  background: linear-gradient(
-    106.5deg,
-    rgba(255, 215, 185, 0.91) 23%,
-    rgba(223, 159, 247, 0.8) 93%
-  );
+  margin: 50px 100px;
+  padding: 50px 50px;
 }
 
 h1 {
@@ -15,6 +12,17 @@ h1 {
 input[type="text"] {
   padding: 5px;
   font-size: 16px;
+}
+
+.container {
+  border: 6px solid white;
+  margin: 50px 120px;
+  padding: 50px 10px;
+  background: linear-gradient(
+    106.5deg,
+    rgba(255, 215, 185, 0.91) 23%,
+    rgba(223, 159, 247, 0.8) 93%
+  );
 }
 
 button {
@@ -32,4 +40,23 @@ button:hover {
 }
 footer {
   bottom: center;
+}
+
+.back-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+@media (min-aspect-ratio: 16/9) {
+  .back-video {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .back-video {
+    width: auto;
+    height: 100%;
+  }
 }
