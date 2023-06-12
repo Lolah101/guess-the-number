@@ -1,7 +1,7 @@
 body {
   text-align: center;
   font-family: monospace, sans-serif;
-  margin: 50px 100px;
+  margin: 10px 100px;
   padding: 50px 50px;
 }
 
@@ -59,4 +59,7 @@ footer {
     width: auto;
     height: 100%;
   }
+}
+.bitmojiImage {
+  max-width: 100px;
 }
